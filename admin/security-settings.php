@@ -3,13 +3,12 @@ if (!defined('ABSPATH')) {
     exit;
 }
 
-require_once AIGEN_PATH . 'includes/login-math-captcha.php'; 
-require_once AIGEN_PATH . 'includes/disable-xmlrpc.php'; 
-require_once AIGEN_PATH . 'includes/disable-wp-json-if-not-logged-in.php'; 
-require_once AIGEN_PATH . 'includes/disable-file-editing.php'; 
-require_once AIGEN_PATH . 'includes/remove-rss.php'; 
-require_once AIGEN_PATH . 'includes/remove-wp-version.php'; 
-require_once AIGEN_PATH . 'includes/disable-bundled-theme-install.php'; 
+require_once AIGEN_PATH . 'admin/disable-xmlrpc.php'; 
+require_once AIGEN_PATH . 'admin/disable-wp-json-if-not-logged-in.php'; 
+require_once AIGEN_PATH . 'admin/disable-file-editing.php'; 
+require_once AIGEN_PATH . 'admin/remove-rss.php'; 
+require_once AIGEN_PATH . 'admin/remove-wp-version.php'; 
+require_once AIGEN_PATH . 'admin/disable-bundled-theme-install.php'; 
 
 function aigen_add_security_submenu() {
     add_submenu_page(
@@ -54,14 +53,6 @@ function aigen_security_settings_init() {
         __( 'Main Settings', 'aigen' ),
         'aigen_security_section_callback',
         'aigen-security'
-    );
-
-    add_settings_field(
-        'enable_math_captcha',
-        __( 'Enable Math Captcha for Login', 'aigen' ),
-        'aigen_math_captcha_callback',
-        'aigen-security',
-        'aigen_security_main_section'
     );
 }
 add_action( 'admin_init', 'aigen_security_settings_init' );

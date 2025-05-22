@@ -25,9 +25,11 @@ function aigen_settings_page() {
         ['slug' => 'aigen-settings',              'label' => $menu_title.' Settings', 'dashicon' => 'dashicons-admin-home'],
         ['slug' => 'aigen-301-redirects',        'label' => '301 Redirects',            'dashicon' => 'dashicons-share'],
         ['slug' => 'aigen-404-logs',             'label' => '404 Logs',                 'dashicon' => 'dashicons-warning'],
-        // ['slug' => 'aigen-security',             'label' => 'Security Settings',        'dashicon' => 'dashicons-shield'],
         ['slug' => 'aigen-smtp-settings',        'label' => 'SMTP Mail Settings',       'dashicon' => 'dashicons-email'],
+        ['slug' => 'aigen-mail-logs',        'label' => 'Mail Logs',       'dashicon' => 'dashicons-email'],
+        ['slug' => 'aigen-search-logs',        'label' => 'Search Logs',       'dashicon' => 'dashicons-search'],
         ['slug' => 'aigen-homepage-categories',        'label' => 'Homepage Categories',       'dashicon' => 'dashicons-email'],
+        ['slug' => 'aigen-security',             'label' => 'Security Settings',        'dashicon' => 'dashicons-shield'],
     ];
     ?>
     <div class="wrap">
@@ -42,6 +44,21 @@ function aigen_settings_page() {
                     <span class="button-label"><?php echo esc_html($item['label']); ?></span>
                 </a>
             <?php endforeach; ?>
+        </div>
+
+        <div style="max-width:660px; margin-bottom:40px">
+            <p style="line-height:24px !important;">
+                AIGEN-BRX Child theme is designed to give you the tools and solutions for <a href="https://bricksbuilder.io/" target="_blank">Bricks Builder</a>.
+                Post Types, Custom Fields, Taxonomies, SMTP Mail Setting, Custom Login Design,
+                Math Chaptcha for Login/Register, Security Features, 404 Logs, 301 Redirects and some Block Editor Features.
+                Everything is straightforward and ready to use. <br><br>
+    
+                <a href="https://academy.bricksbuilder.io/topic/getting-started/" target="_blank"
+                style="font-size: 16px; text-decoration:none; line-height:40px">Bricks Builder Docs ➤</a><br>
+    
+                <a href="https://www.youtube.com/@bricksbuilder/videos" target="_blank"
+                style="font-size: 16px; text-decoration:none; line-height:40px">Bricks Builder Videos ➤</a><br>
+            </p>
         </div>
 
         <form method="post" action="options.php">
