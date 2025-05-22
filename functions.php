@@ -13,6 +13,7 @@ require_once AIGEN_PATH . 'admin/smtp-settings.php';
 require_once AIGEN_PATH . 'admin/mail-logging.php';
 require_once AIGEN_PATH . 'admin/homepage-categories.php';
 require_once AIGEN_PATH . 'admin/search-logging.php';
+require_once AIGEN_PATH . 'admin/hp-categories-display.php'; 
 
 
 require_once AIGEN_PATH . 'admin/security-settings.php';

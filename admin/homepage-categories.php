@@ -1,5 +1,7 @@
 <?php
 
+require_once AIGEN_PATH . 'admin/hp-categories-display.php'; 
+
 function aigen_register_homepage_categories_post_type() {
     register_post_type('aigen_homepage_categories', array(
         'public'  => false,
@@ -63,6 +65,7 @@ function aigen_render_home_categories_page() {
 
     echo '<div class="wrap">';
     echo '<h1>Homepage Categories</h1>';
+    echo '<p>To use, add shortcode [homepage_categories] to the homepage (Hardcoded to 8 only for now)</p>';
     echo '<form method="post">';
     echo '<table class="widefat fixed striped">';
     echo '<thead><tr><th>Category</th><th>Show on Homepage</th><th>Sort Order</th></tr></thead>';
