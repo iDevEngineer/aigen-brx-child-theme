@@ -28,8 +28,9 @@ function aigen_settings_page() {
         ['slug' => 'aigen-smtp-settings',        'label' => 'SMTP Mail Settings',       'dashicon' => 'dashicons-email'],
         ['slug' => 'aigen-mail-logs',        'label' => 'Mail Logs',       'dashicon' => 'dashicons-email'],
         ['slug' => 'aigen-search-logs',        'label' => 'Search Logs',       'dashicon' => 'dashicons-search'],
-        ['slug' => 'aigen-homepage-categories',        'label' => 'Homepage Categories',       'dashicon' => 'dashicons-email'],
+        ['slug' => 'aigen-homepage-categories',        'label' => 'Homepage Categories',       'dashicon' => 'dashicons-admin-home'],
         ['slug' => 'aigen-security',             'label' => 'Security Settings',        'dashicon' => 'dashicons-shield'],
+        ['slug' => 'aigen-revision-limiter',             'label' => 'Revision Limiter',        'dashicon' => 'dashicons-history'],
     ];
     ?>
     <div class="wrap">
